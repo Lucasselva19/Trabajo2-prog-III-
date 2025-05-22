@@ -1,0 +1,15 @@
+body{
+    background-color: papayawhip;
+}
+
+h1{
+    text-align: center;
+}
+
+.correcto{
+    color: green;
+}
+
+.incorrecto{
+    color: red;
+}

@@ -8,6 +8,10 @@ Boton.addEventListener("click", calculoIMC);
 function calculoIMC(){
         const pesofloat = parseFloat(Peso.value);
         const alturafloat = parseFloat(Altura.value);
+        if (pesofloat < 0 || alturafloat < 0) {
+            texto.innerText = "Por favor ingrese valores positivos.";
+            return;
+        }
         const indice = pesofloat / (alturafloat*alturafloat);
         texto.innerText = "Su indice de masa corporal es: " + indice;
         console.log(indice);

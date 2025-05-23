@@ -10,6 +10,16 @@ function calcularArea(){
     const LadoAfloat = parseFloat(LadoA.value);
     const LadoBfloat = parseFloat(LadoB.value);
     const LadoCfloat = parseFloat(LadoC.value);
+    
+    if (LadoAfloat < 0 || LadoBfloat < 0 || LadoCfloat < 0) {
+        texto.innerText = "Por favor ingrese valores positivos.";
+        return;
+    }
+
+    if (LadoAfloat < LadoBfloat || LadoAfloat < LadoCfloat || LadoBfloat < LadoCfloat || LadoCfloat < 0) {
+        texto.innerText = "Por favor ingrese valores válidos.";
+        return;
+    }
 
     const areaRectangulo = LadoBfloat*LadoCfloat;
     const areaTriangulo = ((LadoAfloat-LadoCfloat)*LadoBfloat)/2;

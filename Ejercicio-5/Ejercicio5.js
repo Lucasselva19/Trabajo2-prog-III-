@@ -25,5 +25,5 @@ function calcularArea(){
     const areaTriangulo = ((LadoAfloat-LadoCfloat)*LadoBfloat)/2;
 
     const area = areaRectangulo+areaTriangulo;
-    texto.innerText = "El area del trapecio es=  " + area;
+    texto.innerText = "El area del trapecio es=  " + area + " metros";
 }

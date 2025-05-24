@@ -8,7 +8,7 @@ Boton.addEventListener("click", calculoIMC);
 function calculoIMC(){
         const pesofloat = parseFloat(Peso.value);
         const alturafloat = parseFloat(Altura.value);
-        if (pesofloat < 0 || alturafloat < 0) {
+        if (pesofloat < 0 || isNaN(pesofloat) || alturafloat < 0   || isNaN(alturafloat)) {
             texto.innerText = "Por favor ingrese valores positivos.";
             return;
         }
